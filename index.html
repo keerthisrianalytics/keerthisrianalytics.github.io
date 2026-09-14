@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Keerthi Sri Ponnapalli | Business Analytics Portfolio</title>
+
+    <meta name="description"
+        content="Portfolio of Keerthi Sri Ponnapalli, PGDM Business Analytics student interested in Data Analytics, Business Intelligence and Power BI.">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f8fc;
+            color: #20232a;
+            line-height: 1.7;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.97);
+            border-bottom: 1px solid #e5e7eb;
+            padding: 16px 7%;
+        }
+
+        .nav-container {
+            max-width: 1150px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 22px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover {
+            color: #5b4bdb;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 70px 7%;
+            background: linear-gradient(135deg, #f8f7ff, #ffffff);
+        }
+
+        .hero-container {
+            max-width: 1150px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .small-heading {
+            color: #5b4bdb;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 7vw, 70px);
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: clamp(19px, 3vw, 28px);
+            color: #555;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 720px;
+            color: #666;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #5b4bdb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #4739b5;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            border: 1px solid #d1d5db;
+            color: #333;
+            background: white;
+        }
+
+        .btn-secondary:hover {
+            border-color: #5b4bdb;
+            color: #5b4bdb;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 80px 7%;
+        }
+
+        .section-container {
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            color: #777;
+            margin-bottom: 40px;
+            max-width: 720px;
+        }
+
+        /* ABOUT */
+
+        .about-box {
+            background: white;
+            padding: 35px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .about-box p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .about-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* SKILLS */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 28px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .skill-card h3 {
+            margin-bottom: 15px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+        }
+
+        .skill {
+            background: #f0efff;
+            color: #4d40bd;
+            padding: 7px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        /* PROJECTS */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 30px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+
+        .project-number {
+            color: #5b4bdb;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-card h3 {
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+
+        .project-type {
+            color: #777;
+            font-size: 13px;
+            margin-bottom: 17px;
+        }
+
+        .project-card p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .project-card ul {
+            padding-left: 20px;
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .tools {
+            font-size: 13px;
+            font-weight: bold;
+            color: #4d40bd;
+        }
+
+        /* INTERNSHIP */
+
+        .experience-card {
+            background: white;
+            padding: 35px;
+            border-radius: 14px;
+            border-left: 5px solid #5b4bdb;
+            border-top: 1px solid #e5e7eb;
+            border-right: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .experience-card h3 {
+            font-size: 24px;
+        }
+
+        .company {
+            color: #5b4bdb;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        .experience-card p,
+        .experience-card li {
+            color: #555;
+        }
+
+        .experience-card ul {
+            padding-left: 20px;
+        }
+
+        /* EDUCATION */
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .education-card {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .education-card h3 {
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+
+        .school {
+            color: #5b4bdb;
+            font-weight: bold;
+        }
+
+        .education-card p {
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* CERTIFICATIONS */
+
+        .certification-card {
+            background: white;
+            padding: 28px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+            margin-bottom: 18px;
+        }
+
+        .certification-card h3 {
+            margin-bottom: 5px;
+        }
+
+        .certification-card p {
+            color: #777;
+        }
+
+        /* LEADERSHIP */
+
+        .leadership-card {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .leadership-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .leadership-card p {
+            color: #666;
+        }
+
+        /* RESUME */
+
+        .resume-section {
+            background: #17181d;
+            color: white;
+            text-align: center;
+        }
+
+        .resume-section .section-subtitle {
+            margin-left: auto;
+            margin-right: auto;
+            color: #bbb;
+        }
+
+        /* CONTACT */
+
+        .contact-box {
+            background: white;
+            padding: 40px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+        }
+
+        .contact-box p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111216;
+            color: #aaa;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 768px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                min-height: 80vh;
+                padding-top: 50px;
+            }
+
+            section {
+                padding: 60px 5%;
+            }
+
+            .skills-grid,
+            .projects-grid,
+            .education-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-box,
+            .project-card,
+            .skill-card,
+            .experience-card,
+            .education-card,
+            .contact-box {
+                padding: 24px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .section-title {
+                font-size: 29px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="nav-container">
+
+        <div class="logo">
+            Keerthi Sri
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#internship">Internship</a>
+            </li>
+
+            <li>
+                <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#certifications">Certifications</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-container">
+
+        <div class="small-heading">
+            PGDM BUSINESS ANALYTICS
+        </div>
+
+        <h1>
+            Keerthi Sri Ponnapalli
+        </h1>
+
+        <h2>
+            Business Analytics Student | Aspiring Data Analyst
+        </h2>
+
+        <p>
+            I am interested in using data to understand business performance,
+            identify trends, and support better decision-making through
+            analytics and visualization.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#projects" class="btn btn-primary">
+                View My Projects
+            </a>
+
+            <a href="https://www.linkedin.com/in/keerthi-sri-ponnapalli-b4a2b8344"
+               target="_blank"
+               class="btn btn-secondary">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="section-container">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <p class="section-subtitle">
+            My academic background, skills and career interests.
+        </p>
+
+        <div class="about-box">
+
+            <p>
+                I am currently pursuing a PGDM in Business Analytics after
+                completing my B.Com in Business Analytics.
+            </p>
+
+            <p>
+                I am interested in using data to understand business
+                performance and support decision-making.
+            </p>
+
+            <p>
+                I have developed skills in Power BI, Advanced Excel,
+                data visualization, and data analysis, with practical
+                experience in creating dashboards, tracking KPIs,
+                and identifying business trends.
+            </p>
+
+            <p>
+                I am currently seeking an analytics internship where I can
+                apply my skills to real-world business problems, gain
+                practical industry experience, and continue developing
+                as an analytics professional.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+    <div class="section-container">
+
+        <h2 class="section-title">
+            Skills
+        </h2>
+
+        <p class="section-subtitle">
+            Tools and analytical skills I am currently developing and applying.
+        </p>
+
+
+        <div class="skills-grid">
+
+
+            <div class="skill-card">
+
+                <h3>
+                    Data Analytics
+                </h3>
+
+                <div class="skill-list">
+
+                    <span class="skill">Data Analysis</span>
+                    <span class="skill">Business Analytics</span>
+                    <span class="skill">KPI Analysis</span>
+                    <span class="skill">Data Visualization</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    Power BI
+                </h3>
+
+                <div class="skill-list">
+
+                    <span class="skill">Power BI</span>
+                    <span class="skill">Power Query</span>
+                    <span class="skill">DAX</span>
+                    <span class="skill">Dashboard Development</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    Excel
+                </h3>
+
+                <div class="skill-list">
+
+                    <span class="skill">Advanced Excel</span>
+                    <span class="skill">Pivot Tables</span>
+                    <span class="skill">VLOOKUP</span>
+                    <span class="skill">XLOOKUP</span>
+                    <span class="skill">SUMIFS</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    Presentation
+                </h3>
+
+                <div class="skill-list">
+
+                    <span class="skill">Microsoft PowerPoint</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+    <div class="section-container">
+
+        <h2 class="section-title">
+            Featured Projects
+        </h2>
+
+        <p class="section-subtitle">
+            Business analytics projects focused on dashboards,
+            KPIs, trends and data visualization.
+        </p>
+
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    01 — SALES ANALYTICS
+                </div>
+
+                <h3>
+                    Global Car Sales Dashboard
+                </h3>
+
+                <div class="project-type">
+                    Power BI
+                </div>
+
+                <p>
+                    Analysed car sales data to identify sales trends,
+                    top-performing models, and regional performance.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Analysed car sales data and identified key trends.
+                    </li>
+
+                    <li>
+                        Created an interactive Power BI dashboard.
+                    </li>
+
+                    <li>
+                        Used Power Query and DAX.
+                    </li>
+
+                    <li>
+                        Developed KPIs and visualizations for business
+                        performance analysis.
+                    </li>
+
+                </ul>
+
+                <div class="tools">
+                    Power BI • Power Query • DAX • Data Visualization
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    02 — MARKETING ANALYTICS
+                </div>
+
+                <h3>
+                    Social Media Analytics Dashboard
+                </h3>
+
+                <div class="project-type">
+                    Power BI
+                </div>
+
+                <p>
+                    Analysed social media performance using engagement
+                    and reach metrics.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Analysed engagement and reach metrics.
+                    </li>
+
+                    <li>
+                        Created an interactive dashboard.
+                    </li>
+
+                    <li>
+                        Identified content trends and performance patterns.
+                    </li>
+
+                    <li>
+                        Presented insights through data visualization.
+                    </li>
+
+                </ul>
+
+                <div class="tools">
+                    Power BI • Data Analysis • Data Visualization
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card">
+
+                <div class="project-number">
+                    03 — E-COMMERCE ANALYTICS
+                </div>
+
+                <h3>
+                    E-Commerce Sales Dashboard
+                </h3>
+
+                <div class="project-type">
+                    Power BI
+                </div>
+
+                <p>
+                    Analysed e-commerce sales and customer-related data
+                    to understand business performance.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Analysed e-commerce sales and customer data.
+                    </li>
+
+                    <li>
+                        Built an interactive dashboard.
+                    </li>
+
+                    <li>
+                        Tracked sales, profit and key performance indicators.
+                    </li>
+
+                    <li>
+                        Identified trends to support business decision-making.
+                    </li>
+
+                </ul>
+
+                <div class="tools">
+                    Power BI • KPI Analysis • Data Visualization
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTERNSHIP -->
+
+<section id="internship">
+
+    <div class="section-container">
+
+        <h2 class="section-title">
+            Internship Experience
+        </h2>
+
+        <p class="section-subtitle">
+            Practical exposure to Power BI, data preparation,
+            dashboards and reporting.
+        </p>
+
+
+        <div class="experience-card">
+
+            <h3>
+                Power BI Intern
+            </h3>
+
+            <div class="company">
+                Naresh IT
+            </div>
+
+            <p>
+                Worked on Power BI concepts including data preparation,
+                visualization, dashboards and reporting.
+            </p>
+
+            <br>
+
+            <ul>
+
+                <li>
+                    Practiced transforming datasets.
+                </li>
+
+                <li>
+                    Worked with data visualization and dashboards.
+                </li>
+
+                <li>
+                    Presented business information through interactive
+                    dashboards.
+                </li>
+
+                <li>
+                    Gained practical exposure to Power BI reporting.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+    <div class="section-container">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+        <p class="section-subtitle">
+            My academic background in Business and Analytics.
+        </p>
+
+
+        <div class="education-grid">
+
+
+            <div class="education-card">
+
+                <h3>
+                    PGDM — Business Analytics
+                </h3>
+
+                <div class="school">
+                    School of Innovation and Management (SoIM)
+                </div>
+
+                <p>
+                    2026 – 2028
+                </p>
+
+                <p>
+                    Currently pursuing a PGDM in Business Analytics.
+                </p>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <h3>
+                    B.Com — Business Analytics
+                </h3>
+
+                <div class="school">
+                    Raja Bahadur Venkata Rama Reddy Women's College, Hyderabad
+                </div>
+
+                <p>
+                    2023 – 2026
+                </p>
+
+                <p>
+                    CGPA: <strong>9.2</strong>
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+
+    <div class="section-container">
+
+        <h2 class="section-title">
+            Certifications
+        </h2>
+
+        <p class="section-subtitle">
+            Certifications supporting my analytics and technical learning.
+        </p>
+
+
+        <div class="certification-card">
+
+            <h3>
+                Microsoft Power BI Data Analyst Professional Certificate
+            </h3>
+
+            <p>
+                Coursera
+            </p>
+
+        </div>
+
+
+        <div class="certification-card">
+
+            <h3>
+                Data Analytics Using Excel
+            </h3>
+
+            <p>
+                Coursera
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LEADERSHIP -->
+
+<section>
+
+    <div class="section-container">
+
+        <h2 class="section-title">
+            Leadership & Activities
+        </h2>
+
+        <p class="section-subtitle">
+            Academic leadership and participation.
+        </p>
+
+
+        <div class="leadership-card">
+
+            <h3>
+                Class Representative
+            </h3>
+
+            <p>
+                Served as Class Representative during B.Com —
+                Business Analytics.
+            </p>
+
+            <br>
+
+            <p>
+                Participated in academic and business analytics activities.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RESUME -->
+
+<section class="resume-section">
+
+    <div class="section-container">
+
+        <h2 class="section-title">
+            My Resume
+        </h2>
+
+        <p class="section-subtitle">
+            Interested in learning more about my education, skills,
+            projects and experience?
+        </p>
+
+
+        <!--
+        IMPORTANT:
+        After uploading your resume to this GitHub repository,
+        change the filename below to the EXACT filename of your PDF.
+        -->
+
+        <a href="Resume-1.pdf"
+           target="_blank"
+           class="btn btn-primary">
+
+            View My Resume
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <div class="section-container">
+
+        <h2 class="section-title">
+            Let's Connect
+        </h2>
+
+        <p class="section-subtitle">
+            I am currently looking for analytics internship opportunities
+            where I can apply my skills and gain practical industry experience.
+        </p>
+
+
+        <div class="contact-box">
+
+            <p>
+                Interested in connecting with me regarding internships,
+                analytics opportunities or professional networking?
+            </p>
+
+
+            <div class="contact-links">
+
+                <a href="https://www.linkedin.com/in/keerthi-sri-ponnapalli-b4a2b8344"
+                   target="_blank"
+                   class="btn btn-primary">
+
+                    LinkedIn
+
+                </a>
+
+
+                <a href="mailto:ponnapalli.keerthisri@soim.edu.in"
+                   class="btn btn-secondary">
+
+                    Email Me
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 Keerthi Sri Ponnapalli • PGDM Business Analytics
+
+</footer>
+
+
+</body>
+
+</html>
