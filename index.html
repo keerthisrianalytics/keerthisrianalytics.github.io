@@ -470,11 +470,382 @@
                 font-size: 29px;
             }
         }
+        .section-title {
+    font-size: 29px;
+}
+}
 
-    </style>
+/* HERO SECTION */
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* ...rest of the new CSS... */
+
+@media (max-width: 768px) {
+    ...
+}
+            /* your existing CSS */
+
+    .section-title {
+        ...
+    }
+
+    /* ABOUT SECTION */
+
+    .about-box {
+        ...
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 768px) {
+    }
+
+        /* WHAT I CAN DO */
+
+.capabilities-section {
+    padding: 80px 20px;
+}
+
+.capabilities-grid {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.capability-card {
+    padding: 30px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.capability-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+}
+
+.capability-card h3 {
+    margin-bottom: 15px;
+}
+
+.capability-card p {
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+
+    .capabilities-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+        /* PROJECT CARDS */
+
+.projects-grid {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    padding: 25px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+}
+
+.project-card .project-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    max-height: 380px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 10px;
+}
+
+.project-number {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.project-type {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.project-card p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-card h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.project-card ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.project-card li {
+    margin-bottom: 9px;
+    line-height: 1.5;
+}
+
+.tools {
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+
+/* PROJECTS — MOBILE */
+
+@media (max-width: 768px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-card .project-image {
+        width: 100%;
+        max-width: 100%;
+        max-height: 240px;
+        object-fit: contain;
+        margin-bottom: 20px;
+    }
+
+    .project-card h3 {
+        font-size: 21px;
+    }
+
+    .project-card p {
+        font-size: 15px;
+    }
+
+}
+        /* INTERNSHIP SECTION */
+
+.experience-card {
+    max-width: 900px;
+    margin: 40px auto 0;
+    padding: 35px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.experience-role {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.company {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.experience-tag {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.internship-project {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.experience-card .project-image {
+    width: 100%;
+    max-width: 800px;
+    max-height: 400px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 10px;
+}
+
+.experience-description {
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.experience-card h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.experience-card ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.experience-card li {
+    margin-bottom: 9px;
+    line-height: 1.5;
+}
+
+
+/* INTERNSHIP — MOBILE */
+
+@media (max-width: 768px) {
+
+    .experience-card {
+        padding: 22px;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .experience-role {
+        font-size: 22px;
+    }
+
+    .company {
+        font-size: 16px;
+    }
+
+    .experience-card .project-image {
+        max-height: 240px;
+    }
+
+}
+        }
+    
+/* RESUME SECTION */
+
+.resume-section {
+    padding: 80px 20px;
+}
+
+.resume-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.resume-buttons .btn {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .resume-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .resume-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+}
+            .resume-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+}
+
+
+/* EDUCATION */
+
+.education-grid {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* ...paste the rest of the CSS here... */
+
+
+/* EDUCATION & CERTIFICATIONS — MOBILE */
+
+@media (max-width: 768px) {
+
+    .education-grid,
+    .certifications-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .education-card,
+    .certification-card {
+        padding: 24px;
+    }
+
+    .education-card h3,
+    .certification-card h3 {
+        font-size: 19px;
+    }
+
+}
+
+</style>
 
 </head>
-
 
 <body>
 
@@ -568,6 +939,36 @@
 
 </section>
 
+    <!-- ANALYTICS SNAPSHOT -->
+
+<section class="stats-section">
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            <h3>3+</h3>
+            <p>Analytics Projects</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>1</h3>
+            <p>Power BI Internship</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>2</h3>
+            <p>Analytics Certifications</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>9.2</h3>
+            <p>B.Com CGPA</p>
+        </div>
+
+    </div>
+
+</section>
+
 
 <!-- ABOUT -->
 
@@ -580,34 +981,77 @@
         </h2>
 
         <p class="section-subtitle">
-            My academic background, skills and career interests.
+            Business Analytics student focused on turning data into insights.
         </p>
 
         <div class="about-box">
 
-            <p>
-                I am currently pursuing a PGDM in Business Analytics after
-                completing my B.Com in Business Analytics.
-            </p>
+            <div class="about-content">
 
-            <p>
-                I am interested in using data to understand business
-                performance and support decision-making.
-            </p>
+                <div class="about-intro">
 
-            <p>
-                I have developed skills in Power BI, Advanced Excel,
-                data visualization, and data analysis, with practical
-                experience in creating dashboards, tracking KPIs,
-                and identifying business trends.
-            </p>
+                    <h3>
+                        PGDM Business Analytics Student
+                    </h3>
 
-            <p>
-                I am currently seeking an analytics internship where I can
-                apply my skills to real-world business problems, gain
-                practical industry experience, and continue developing
-                as an analytics professional.
-            </p>
+                    <p>
+                        I am currently pursuing a PGDM in Business Analytics
+                        after completing my B.Com in Business Analytics.
+                    </p>
+
+                    <p>
+                        I am interested in using data to understand business
+                        performance, identify trends, track KPIs, and support
+                        data-driven decision-making.
+                    </p>
+
+                    <p>
+                        My current skills include Power BI, Advanced Excel,
+                        data analysis, and data visualization. I have applied
+                        these skills through dashboard projects and practical
+                        internship experience.
+                    </p>
+
+                </div>
+
+                <div class="about-highlights">
+
+                    <div class="highlight-item">
+                        <span>📊</span>
+                        <div>
+                            <strong>Business Analytics</strong>
+                            <p>
+                                Analysing data to understand business
+                                performance and trends.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-item">
+                        <span>📈</span>
+                        <div>
+                            <strong>Power BI</strong>
+                            <p>
+                                Creating interactive dashboards and
+                                KPI-focused visualizations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-item">
+                        <span>💼</span>
+                        <div>
+                            <strong>Career Focus</strong>
+                            <p>
+                                Building practical experience in
+                                data analytics and business intelligence.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -615,6 +1059,115 @@
 
 </section>
 
+    <!-- WHAT I CAN DO -->
+
+<section id="capabilities">
+
+    <div class="section-container">
+
+        <h2 class="section-title">
+            What I Can Do
+        </h2>
+
+        <p class="section-subtitle">
+            Turning business data into clear and actionable insights.
+        </p>
+
+        <div class="capabilities-grid">
+
+            <div class="capability-card">
+                <h3>📊 Dashboard Development</h3>
+                <p>
+                    Create interactive Power BI dashboards for
+                    business reporting and KPI monitoring.
+                </p>
+            </div>
+
+            <div class="capability-card">
+                <h3>🔎 Data Analysis</h3>
+                <p>
+                    Analyse datasets to identify trends,
+                    patterns and performance indicators.
+                </p>
+            </div>
+
+            <div class="capability-card">
+                <h3>🧹 Data Preparation</h3>
+                <p>
+                    Prepare and transform datasets using
+                    Power Query and Excel.
+                </p>
+            </div>
+
+            <div class="capability-card">
+                <h3>📈 Business Reporting</h3>
+                <p>
+                    Present analytical results through
+                    clear reports and visualizations.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </section>
+
+<!-- WHAT I CAN DO -->
+
+<section class="capabilities-section" id="capabilities">
+
+    <div class="section-container">
+
+        <h2 class="section-title">
+            What I Can Do
+        </h2>
+
+        <p class="section-subtitle">
+            Turning business data into clear and actionable insights.
+        </p>
+
+        <div class="capabilities-grid">
+
+            <div class="capability-card">
+                <h3>📊 Dashboard Development</h3>
+                <p>
+                    Create interactive Power BI dashboards for
+                    business reporting and KPI monitoring.
+                </p>
+            </div>
+
+            <div class="capability-card">
+                <h3>🔎 Data Analysis</h3>
+                <p>
+                    Analyse datasets to identify trends,
+                    patterns and performance indicators.
+                </p>
+            </div>
+
+            <div class="capability-card">
+                <h3>🧹 Data Preparation</h3>
+                <p>
+                    Prepare and transform datasets using
+                    Power Query and Excel.
+                </p>
+            </div>
+
+            <div class="capability-card">
+                <h3>📈 Business Reporting</h3>
+                <p>
+                    Present analytical results through
+                    clear reports and visualizations.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- SKILLS -->
 
@@ -627,17 +1180,18 @@
         </h2>
 
         <p class="section-subtitle">
-            Tools and analytical skills I am currently developing and applying.
+            Tools and analytical skills I use to analyse data and build
+            business-focused dashboards.
         </p>
-
 
         <div class="skills-grid">
 
+            <!-- DATA ANALYTICS -->
 
             <div class="skill-card">
 
                 <h3>
-                    Data Analytics
+                    📊 Data Analytics
                 </h3>
 
                 <div class="skill-list">
@@ -645,6 +1199,7 @@
                     <span class="skill">Data Analysis</span>
                     <span class="skill">Business Analytics</span>
                     <span class="skill">KPI Analysis</span>
+                    <span class="skill">Trend Analysis</span>
                     <span class="skill">Data Visualization</span>
 
                 </div>
@@ -652,10 +1207,12 @@
             </div>
 
 
+            <!-- POWER BI -->
+
             <div class="skill-card">
 
                 <h3>
-                    Power BI
+                    📈 Power BI
                 </h3>
 
                 <div class="skill-list">
@@ -664,16 +1221,19 @@
                     <span class="skill">Power Query</span>
                     <span class="skill">DAX</span>
                     <span class="skill">Dashboard Development</span>
+                    <span class="skill">Interactive Reports</span>
 
                 </div>
 
             </div>
 
 
+            <!-- EXCEL -->
+
             <div class="skill-card">
 
                 <h3>
-                    Excel
+                    📑 Microsoft Excel
                 </h3>
 
                 <div class="skill-list">
@@ -689,14 +1249,19 @@
             </div>
 
 
+            <!-- BUSINESS REPORTING -->
+
             <div class="skill-card">
 
                 <h3>
-                    Presentation
+                    💼 Business Reporting
                 </h3>
 
                 <div class="skill-list">
 
+                    <span class="skill">Business Reporting</span>
+                    <span class="skill">KPI Reporting</span>
+                    <span class="skill">Data Presentation</span>
                     <span class="skill">Microsoft PowerPoint</span>
 
                 </div>
@@ -733,10 +1298,10 @@
             <!-- PROJECT 1 -->
 
             <div class="project-card">
-                
+
                 <img src="images/car-sales-dashboard.png"
-     alt="Global Car Sales Dashboard"
-     class="project-image">
+                     alt="Global Car Sales Dashboard"
+                     class="project-image">
 
                 <div class="project-number">
                     01 — SALES ANALYTICS
@@ -751,12 +1316,15 @@
                 </div>
 
                 <p>
-                    Analysed car sales data to identify sales trends,
-                    top-performing models, and regional performance.
+                    Analysed car sales data to understand sales trends,
+                    company performance and regional sales performance.
                 </p>
 
-                <ul>
+                <h4>
+                    Key Work
+                </h4>
 
+                <ul>
                     <li>
                         Analysed car sales data and identified key trends.
                     </li>
@@ -766,14 +1334,14 @@
                     </li>
 
                     <li>
-                        Used Power Query and DAX.
+                        Used Power Query and DAX for data preparation
+                        and analysis.
                     </li>
 
                     <li>
-                        Developed KPIs and visualizations for business
-                        performance analysis.
+                        Developed KPIs and visualizations for
+                        business performance analysis.
                     </li>
-
                 </ul>
 
                 <div class="tools">
@@ -788,8 +1356,8 @@
             <div class="project-card">
 
                 <img src="images/social-media-dashboard.png"
-     alt="Social Media Analytics Dashboard"
-     class="project-image">
+                     alt="Social Media Analytics Dashboard"
+                     class="project-image">
 
                 <div class="project-number">
                     02 — MARKETING ANALYTICS
@@ -804,28 +1372,31 @@
                 </div>
 
                 <p>
-                    Analysed social media performance using engagement
-                    and reach metrics.
+                    Analysed social media performance using reach,
+                    impressions, engagement and engagement rate metrics.
                 </p>
 
-                <ul>
+                <h4>
+                    Key Work
+                </h4>
 
+                <ul>
                     <li>
                         Analysed engagement and reach metrics.
                     </li>
 
                     <li>
-                        Created an interactive dashboard.
+                        Created an interactive Power BI dashboard.
+                    </li>
+
+                    <li>
+                        Analysed performance across platforms
+                        and content types.
                     </li>
 
                     <li>
                         Identified content trends and performance patterns.
                     </li>
-
-                    <li>
-                        Presented insights through data visualization.
-                    </li>
-
                 </ul>
 
                 <div class="tools">
@@ -837,50 +1408,61 @@
 
             <!-- PROJECT 3 -->
 
-<div class="project-card">
+            <div class="project-card">
 
-    <img src="images/recruitment-dashboard.png"
-         alt="Recruitment Process Efficiency and Hiring Cycle Time Dashboard"
-         class="project-image">
+                <img src="images/recruitment-dashboard.png"
+                     alt="Recruitment Process Efficiency and Hiring Cycle Time Dashboard"
+                     class="project-image">
 
-    <div class="project-number">
-        03 — HR ANALYTICS
+                <div class="project-number">
+                    03 — HR ANALYTICS
+                </div>
+
+                <h3>
+                    Recruitment Process Efficiency & Hiring Cycle Time
+                </h3>
+
+                <div class="project-type">
+                    Power BI
+                </div>
+
+                <p>
+                    Analysed recruitment process data to understand
+                    hiring efficiency and hiring cycle time.
+                </p>
+
+                <h4>
+                    Key Work
+                </h4>
+
+                <ul>
+                    <li>
+                        Analysed recruitment and hiring process data.
+                    </li>
+
+                    <li>
+                        Developed KPIs to monitor recruitment efficiency.
+                    </li>
+
+                    <li>
+                        Created interactive Power BI visualizations.
+                    </li>
+
+                    <li>
+                        Analysed hiring patterns across recruitment data.
+                    </li>
+                </ul>
+
+                <div class="tools">
+                    Power BI • Data Analysis • KPI Analysis
+                </div>
+
+            </div>
+
+
+        </div>
+
     </div>
-
-    <h3>
-        Recruitment Process Efficiency & Hiring Cycle Time
-    </h3>
-
-    <div class="project-type">
-        Power BI
-    </div>
-
-    <p>
-        Analyzed recruitment process data to understand hiring
-        efficiency and hiring cycle time using Power BI.
-    </p>
-
-    <ul>
-
-        <li>
-            Analyzed recruitment and hiring process data.
-        </li>
-
-        <li>
-            Developed KPIs to monitor recruitment efficiency.
-        </li>
-
-        <li>
-            Created interactive Power BI visualizations.
-        </li>
-
-        <li>
-            Identified trends in hiring cycle time.
-        </li>
-
-    </ul>
-
-</div>
 
 </section>
 
@@ -896,57 +1478,82 @@
         </h2>
 
         <p class="section-subtitle">
-            Practical exposure to Power BI, data preparation,
-            dashboards and reporting.
+            Practical experience in Power BI, data preparation,
+            dashboard development and business reporting.
         </p>
+
 
         <div class="experience-card">
 
-    <img src="images/ecommerce-dashboard.png"
-         alt="E-Commerce Sales Dashboard"
-         class="project-image">
+            <div class="experience-header">
 
-    <h3>
-        Power BI Intern
-    </h3>
+                <div>
+                    <div class="experience-role">
+                        Power BI Intern
+                    </div>
 
-    <div class="company">
-        Naresh IT
+                    <div class="company">
+                        Naresh IT
+                    </div>
+                </div>
+
+                <div class="experience-tag">
+                    Power BI
+                </div>
+
+            </div>
+
+
+            <div class="internship-project">
+                E-Commerce Sales Dashboard
+            </div>
+
+
+            <img src="images/ecommerce-dashboard.png"
+                 alt="E-Commerce Sales Dashboard"
+                 class="project-image">
+
+
+            <p class="experience-description">
+                Gained practical experience in Power BI through
+                data preparation, visualization, dashboard development
+                and business reporting using an e-commerce dataset.
+            </p>
+
+
+            <h4>
+                Key Work
+            </h4>
+
+            <ul>
+
+                <li>
+                    Prepared and transformed e-commerce data for analysis.
+                </li>
+
+                <li>
+                    Created visualizations and an interactive Power BI dashboard.
+                </li>
+
+                <li>
+                    Developed KPIs for sales and profit analysis.
+                </li>
+
+                <li>
+                    Presented business information through dashboard
+                    visualizations and reporting.
+                </li>
+
+            </ul>
+
+
+            <div class="tools">
+                Power BI • Power Query • Data Visualization • Dashboard Development
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="project-type">
-        E-Commerce Sales Dashboard
-    </div>
-
-    <p>
-        Worked on Power BI concepts including data preparation,
-        visualization, dashboards and reporting.
-    </p>
-
-    <br>
-
-    <ul>
-
-        <li>
-            Practiced transforming e-commerce datasets.
-        </li>
-
-        <li>
-            Worked with data visualization and dashboard development.
-        </li>
-
-        <li>
-            Developed KPIs for sales and profit analysis.
-        </li>
-
-        <li>
-            Presented business information through an interactive
-            Power BI dashboard.
-        </li>
-
-    </ul>
-
-</div>
 
 </section>
 
@@ -969,7 +1576,13 @@
         <div class="education-grid">
 
 
+            <!-- PGDM -->
+
             <div class="education-card">
+
+                <div class="education-level">
+                    CURRENT
+                </div>
 
                 <h3>
                     PGDM — Business Analytics
@@ -979,30 +1592,39 @@
                     School of Innovation and Management (SoIM)
                 </div>
 
-                <p>
+                <div class="education-duration">
                     2026 – 2028
-                </p>
+                </div>
 
                 <p>
-                    Currently pursuing a PGDM in Business Analytics.
+                    Currently pursuing a PGDM in Business Analytics,
+                    developing knowledge in business analysis,
+                    data-driven decision-making and analytics.
                 </p>
 
             </div>
 
 
+            <!-- B.COM -->
+
             <div class="education-card">
+
+                <div class="education-level">
+                    COMPLETED
+                </div>
 
                 <h3>
                     B.Com — Business Analytics
                 </h3>
 
                 <div class="school">
-                    Raja Bahadur Venkata Rama Reddy Women's College, Hyderabad
+                    Raja Bahadur Venkata Rama Reddy Women's College,
+                    Hyderabad
                 </div>
 
-                <p>
+                <div class="education-duration">
                     2023 – 2026
-                </p>
+                </div>
 
                 <p>
                     CGPA: <strong>9.2</strong>
@@ -1033,28 +1655,47 @@
         </p>
 
 
-        <div class="certification-card">
-
-            <h3>
-                Microsoft Power BI Data Analyst Professional Certificate
-            </h3>
-
-            <p>
-                Coursera
-            </p>
-
-        </div>
+        <div class="certifications-grid">
 
 
-        <div class="certification-card">
+            <!-- CERTIFICATION 1 -->
 
-            <h3>
-                Data Analytics Using Excel
-            </h3>
+            <div class="certification-card">
 
-            <p>
-                Coursera
-            </p>
+                <div class="certification-label">
+                    POWER BI
+                </div>
+
+                <h3>
+                    Microsoft Power BI Data Analyst
+                    Professional Certificate
+                </h3>
+
+                <p>
+                    Coursera
+                </p>
+
+            </div>
+
+
+            <!-- CERTIFICATION 2 -->
+
+            <div class="certification-card">
+
+                <div class="certification-label">
+                    EXCEL
+                </div>
+
+                <h3>
+                    Data Analytics Using Excel
+                </h3>
+
+                <p>
+                    Coursera
+                </p>
+
+            </div>
+
 
         </div>
 
@@ -1113,29 +1754,34 @@
         </h2>
 
         <p class="section-subtitle">
-            Interested in learning more about my education, skills,
-            projects and experience?
+            Explore my education, skills, projects, certifications
+            and practical experience in business analytics.
         </p>
 
 
-        <!--
-        IMPORTANT:
-        After uploading your resume to this GitHub repository,
-        change the filename below to the EXACT filename of your PDF.
-        -->
+        <div class="resume-buttons">
 
-        <a href="Resume.pdf"
-           target="_blank"
-           class="btn btn-primary">
+            <a href="Resume.pdf"
+               target="_blank"
+               class="btn btn-primary">
 
-            View My Resume
+                View My Resume
 
-        </a>
+            </a>
+
+            <a href="Resume.pdf"
+               download
+               class="btn btn-secondary">
+
+                Download Resume
+
+            </a>
+
+        </div>
 
     </div>
 
 </section>
-
 
 <!-- CONTACT -->
 
