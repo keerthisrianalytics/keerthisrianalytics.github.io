@@ -842,6 +842,194 @@
     }
 
 }
+        .education-card h3,
+.certification-card h3 {
+    font-size: 19px;
+}
+
+/* LEADERSHIP */
+
+.leadership-grid {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.leadership-card {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+}
+
+.leadership-icon {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.leadership-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.leadership-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.leadership-card p {
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* LEADERSHIP — MOBILE */
+
+@media (max-width: 768px) {
+
+    .leadership-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .leadership-card {
+        padding: 24px;
+    }
+
+    .leadership-card h3 {
+        font-size: 19px;
+    }
+
+}
+        /* CONTACT */
+
+.contact-box {
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding: 40px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+    text-align: center;
+}
+
+.contact-intro h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.contact-intro p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    text-align: left;
+}
+
+.contact-item > span {
+    font-size: 24px;
+}
+
+.contact-item strong {
+    font-size: 15px;
+}
+
+.contact-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    text-decoration: none;
+}
+
+/* CONTACT — MOBILE */
+
+@media (max-width: 768px) {
+
+    .contact-box {
+        padding: 25px;
+    }
+
+    .contact-intro h3 {
+        font-size: 21px;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-item {
+        width: 100%;
+        max-width: 280px;
+    }
+
+}
+        /* FOOTER */
+
+.site-footer {
+    padding: 50px 20px 25px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer-content h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.footer-content > p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.copyright {
+    font-size: 13px;
+    margin: 0;
+}
 
 </style>
 
@@ -1705,41 +1893,50 @@
 
 
 <!-- LEADERSHIP -->
-
-<section>
-
+<section id="leadership">
     <div class="section-container">
-
-        <h2 class="section-title">
-            Leadership & Activities
-        </h2>
+        <h2 class="section-title">Leadership & Activities</h2>
 
         <p class="section-subtitle">
-            Academic leadership and participation.
+            Academic involvement and leadership experience.
         </p>
 
+        <div class="leadership-grid">
 
-        <div class="leadership-card">
+            <div class="leadership-card">
+                <div class="leadership-icon">👩‍💼</div>
 
-            <h3>
-                Class Representative
-            </h3>
+                <div>
+                    <div class="leadership-label">LEADERSHIP</div>
 
-            <p>
-                Served as Class Representative during B.Com —
-                Business Analytics.
-            </p>
+                    <h3>Class Representative</h3>
 
-            <br>
+                    <p>
+                        Represented classmates and supported communication
+                        between students and faculty while contributing to
+                        academic and classroom activities.
+                    </p>
+                </div>
+            </div>
 
-            <p>
-                Participated in academic and business analytics activities.
-            </p>
+            <div class="leadership-card">
+                <div class="leadership-icon">📊</div>
+
+                <div>
+                    <div class="leadership-label">ACADEMIC</div>
+
+                    <h3>Business Analytics Activities</h3>
+
+                    <p>
+                        Participated in academic activities and practical
+                        projects related to business analytics, data
+                        visualization and business decision-making.
+                    </p>
+                </div>
+            </div>
 
         </div>
-
     </div>
-
 </section>
 
 
@@ -1836,12 +2033,30 @@
 
 <!-- FOOTER -->
 
-<footer>
+<footer class="site-footer">
 
-    © 2026 Keerthi Sri Ponnapalli • PGDM Business Analytics
+    <div class="footer-content">
+
+        <h3>Keerthi Sri Ponnapalli</h3>
+
+        <p>
+            Business Analytics | Power BI | Data Analysis
+        </p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Keerthi Sri Ponnapalli. All rights reserved.
+        </p>
+
+    </div>
 
 </footer>
-
 
 </body>
 
